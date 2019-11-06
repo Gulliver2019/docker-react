@@ -6,4 +6,4 @@ services:
   - docker-build -t gulliver2019/docker-react-f DOckerfile.dev .
 
   script:
-  - docker run -e CI=true gulliver2019/docker-react npm run test
+  - docker run gulliver2019/docker-react npm run test -- --coverage
